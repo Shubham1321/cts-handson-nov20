@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:8081/oauth/token
+    client:
+      client-id: shubhams_client
+      client-secret: 123@123#123
+      user-authorization-uri: http://localhost:8081/user
+      authentication-scheme: form
+      scope:
+      - webclient
+      grant-type: password  
